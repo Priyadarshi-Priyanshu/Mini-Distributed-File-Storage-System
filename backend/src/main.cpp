@@ -1,15 +1,14 @@
 #include "crow.h"
+#include "cors.h"  // include the CORS handler
 
-int main()
-{
-    crow::SimpleApp app;
+int main() {
+    crow::App<CORSHandler> app;  // inject CORSHandler as middleware
 
-    //define your endpoint at the root directory
-    CROW_ROUTE(app, "/<string>")([](std::string name){ // 
-        auto page = crow::mustache::load("fancypage.html"); // 
-        crow::mustache::context ctx ({{"person", name}}); // 
-        return page.render(ctx); //
-    });
+    CROW_ROUTE(app, "/<string>")([](std::string name){
+        crow::json::wvalue response;
+        response["message"] = "Hello, " + name + "!";
+        return response;
+    }); 
 
     app.port(18080).multithreaded().run();
 }

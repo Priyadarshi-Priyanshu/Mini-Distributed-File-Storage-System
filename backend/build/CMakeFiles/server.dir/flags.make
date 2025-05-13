@@ -4,7 +4,7 @@
 # compile CXX with /usr/bin/c++
 CXX_DEFINES = 
 
-CXX_INCLUDES = -I/home/priyanshu/Development/Projects/Mini-Distributed-File-Storage-System/backend/include/Crow/include
+CXX_INCLUDES = -I/home/priyanshu/Development/Projects/Mini-Distributed-File-Storage-System/backend/include -I/home/priyanshu/Development/Projects/Mini-Distributed-File-Storage-System/backend/include/Crow/include
 
 CXX_FLAGS = 
 

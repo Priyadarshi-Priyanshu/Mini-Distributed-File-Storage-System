@@ -974,8 +974,11 @@ CMakeFiles/server.dir/src/main.cpp.o: ../src/main.cpp \
   ../include/Crow/include/crow/version.h \
   ../include/Crow/include/crow/app.h \
   /usr/include/c++/11/thread \
-  /usr/include/c++/11/bits/this_thread_sleep.h
+  /usr/include/c++/11/bits/this_thread_sleep.h \
+  ../include/cors.h
 
+
+../include/cors.h:
 
 /usr/include/c++/11/bits/this_thread_sleep.h:
 
