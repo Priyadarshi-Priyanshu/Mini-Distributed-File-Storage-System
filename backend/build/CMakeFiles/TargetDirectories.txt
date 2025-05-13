@@ -1,0 +1,3 @@
+/home/priyanshu/Development/Projects/Mini-Distributed-File-Storage-System/backend/build/CMakeFiles/server.dir
+/home/priyanshu/Development/Projects/Mini-Distributed-File-Storage-System/backend/build/CMakeFiles/edit_cache.dir
+/home/priyanshu/Development/Projects/Mini-Distributed-File-Storage-System/backend/build/CMakeFiles/rebuild_cache.dir
